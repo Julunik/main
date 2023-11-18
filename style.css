@@ -75,12 +75,23 @@ a.button:hover {
 .stopka
 {
     color: black;
-    padding: 15px;
     width: 100%;
     float: left;
     text-align: center;
 
     animation: ColorChanger 10s linear infinite normal;
+}
+
+.discord
+{
+    color: blue;
+    display: block;
+    font-size: 110%;
+    text-align: center;
+
+    width: 100px;
+    margin: auto;
+    margin-top: 5%;
 }
 
 @keyframes backgroundMove
