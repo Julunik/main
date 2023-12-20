@@ -1,0 +1,203 @@
+.krpg3
+{
+    background-image: url('krpg3/grafika_krpg3/background.png');
+    animation: backgroundMove 10s linear infinite normal;
+}
+
+.krpg3 > p
+{
+    transition: text-shadow .3s;
+    color: red;
+    font-family: 'Julunik', serif;
+    animation: ColorChanger 10s linear infinite normal;
+}
+
+.krpg3:hover > p
+{
+    text-shadow: -1px -1px;
+    text-decoration: underline;
+}
+
+.krpg3_image
+{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+}
+
+.krpg3:hover .krpg3_image
+{
+    animation: logoMove 2s linear infinite normal;
+}
+
+.hc
+{
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(rgba(225, 225, 225, 0), rgba(225, 225, 225, 1));
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    transform: translateY(29px);
+
+    transition: opacity .3s;
+}
+
+.krpg3:hover .hc
+{
+    opacity: 1;
+}
+
+.hc p
+{
+    text-decoration: none;
+    font-family: 'Julunik', serif;
+    animation: ColorChanger 10s linear infinite normal;
+}
+
+.hc p i
+{
+    animation: ColorChanger 10s linear infinite normal;
+}
+
+.version
+{
+    color: gray;
+    width: 200px;
+    font-family: 'Julunik', serif;
+    font-size: 40px;
+    text-align: center;
+    transform: translateY(-100px);
+
+    animation: Blinking 2s linear infinite normal;
+}
+
+.krpg3:hover .version
+{
+    animation: none;
+    opacity: 0;
+}
+
+.version_desc
+{
+    color: gray;
+    width: 200px;
+    font-family: 'Julunik', serif;
+    font-size: 16px;
+    text-align: center;
+    transform: translateY(-110px);
+    animation: Blinking 2s linear infinite normal;
+}
+
+.krpg3:hover .version_desc
+{
+    animation: none;
+    opacity: 0;
+}
+
+@keyframes Blinking
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    50%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes backgroundMove
+{
+    0%
+    {
+        background-position-x: 0;
+        background-position-y: 0;
+    }
+
+    100%
+    {
+        background-position-x: -946px;
+        background-position-y: 530px;
+    }
+}
+
+@keyframes logoMove
+{
+    0%
+    {
+        width: 100px;
+        height: 100px;
+        margin: 100px auto;
+    }
+
+    50%
+    {
+        width: 120px;
+        height: 120px;
+        margin: 90px auto;
+    }
+
+    100%
+    {
+        width: 100px;
+        height: 100px;
+        margin: 100px auto;
+    }
+}
+
+
+@keyframes ColorChanger
+{
+    /* 1 = 0%, 2 = 12%, 3 = 24%, 4 = 36%, 5 = 48%, 6 = 60%, 7 = 72%, 8 = 84%, 9 = 96% */
+    0%
+    {
+        color: red;
+    }
+
+    12%
+    {
+        color: orange;
+    }
+
+    24%
+    {
+        color: yellow;
+    }
+
+    36%
+    {
+       color: greenyellow; 
+    }
+
+    48%
+    {
+        color: aqua;
+    }
+
+    60%
+    {
+       color: blue; 
+    }
+
+    72%
+    {
+        color: purple;
+    }
+
+    84%
+    {
+        color: violet;
+    }
+
+    100%
+    {
+        color: red;
+    }
+}

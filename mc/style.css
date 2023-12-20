@@ -1,0 +1,228 @@
+@font-face
+{
+    font-family: 'Minecraftia';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Minecraftia'), url('grafika_mc/minecraftia.ttf') format('truetype');
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Minecraftia', serif;
+}
+
+.background
+{
+    display: none;
+}
+
+.main a
+{
+    text-decoration: none;
+    cursor: default;
+    display: block;
+    width: 400px;
+    margin: auto;
+}
+
+img
+{
+    user-select: none;
+}
+
+.mc_button
+{
+    width: 400px;
+    height: 40px;
+    padding: 7px;
+    background-image: url('grafika_mc/mc_button.png');
+    margin: auto;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+.mc_button:hover
+{
+    background-image: url('grafika_mc/mc_button_CLICKED.png');
+}
+
+.discord::after
+{
+    content: 'Serwer discord';
+}
+
+.discord:hover::after
+{
+    content: 'Wędrowcy Do Świtu [JŚV4]';
+    animation: ColorChanger 5s linear infinite normal;
+}
+
+.sklep::after
+{
+    content: 'Sklep Julunik.pl';
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.sklep:hover::after
+{
+    content: 'Nie istnieje... może kiedyś?';
+}
+
+.mc_button img
+{
+    width: 100px;
+}
+
+.mc_button2
+{
+    width: 200px;
+    height: 40px;
+    padding: 7px;
+    background-image: url('grafika_mc/mc_button2.png');
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    display: inline-block;
+}
+
+.mc_button2:hover
+{
+    background-image: url('grafika_mc/mc_button2_CLICKED.png');
+}
+
+body
+{
+    background-image: url('grafika_mc/background2.jpg'), url('grafika_mc/background3.jpg');
+    background-size: 10%;
+    background-repeat: repeat-x, repeat;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+@keyframes mcBackground 
+{
+    0%
+    {
+        background-position-x: 0%;
+    }
+
+    100%
+    {
+        background-position-x: 300%;
+    }
+}
+
+.main
+{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main img
+{
+    width: 500px;
+    min-width: 100px;
+}
+
+.julunikpl
+{
+    width: 200px;
+    height: 60px;
+    margin: auto;
+    transform: translate(200px, -50px);
+}
+
+.julunikpl img
+{
+    width: 100%;
+    transform: rotate(-15deg);
+    animation: napisAnim 1s linear infinite normal;
+}
+
+.stopka
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+.kolorowy
+{
+    animation: ColorChanger 10s linear infinite normal;
+}
+
+@keyframes napisAnim
+{
+    0%
+    {
+        width: 100%;
+        transform: translate(0) rotate(-15deg);
+    }
+
+    50%
+    {
+        width: 110%;
+        transform: translate(-5%,-5%) rotate(-15deg);
+    }
+
+    100%
+    {
+        width: 100%;
+        transform: translate(0) rotate(-15deg);
+    }
+}
+
+@keyframes ColorChanger
+{
+    /* 1 = 0%, 2 = 12%, 3 = 24%, 4 = 36%, 5 = 48%, 6 = 60%, 7 = 72%, 8 = 84%, 9 = 96% */
+    0%
+    {
+        color: red;
+    }
+
+    12%
+    {
+        color: orange;
+    }
+
+    24%
+    {
+        color: yellow;
+    }
+
+    36%
+    {
+       color: greenyellow; 
+    }
+
+    48%
+    {
+        color: aqua;
+    }
+
+    60%
+    {
+       color: blue; 
+    }
+
+    72%
+    {
+        color: purple;
+    }
+
+    84%
+    {
+        color: violet;
+    }
+
+    100%
+    {
+        color: red;
+    }
+}

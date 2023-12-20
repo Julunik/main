@@ -1,0 +1,67 @@
+/* PC VERSION */
+
+@media (min-width: 1000px)
+{
+    .background
+    {
+        display: block;
+        overflow: hidden;
+        width: 1050px;
+        margin: 5% auto;
+        height: 525px;
+        background-image: url('grafika_mc/background.jpg');
+        background-size: 150%;
+        background-position-x: 0;
+        background-position-y: 5%;
+        overflow: hidden;
+        animation: mcBackground 30s linear infinite normal;
+        background-repeat: repeat-x;
+        box-shadow: 0 0 10px aqua;
+    }
+
+    .video
+    {
+        display: block;
+        position: absolute;
+        right: 10%;
+    }
+
+    .video iframe
+    {
+        width: 400px;
+        height: 250px;
+    }
+
+    .fullerbread2032
+    {
+        width: 9%;
+        position: fixed;
+        right: 0;
+        top: 10%;
+        animation: fullerAnim 1s linear infinite normal;
+    }
+
+    .AndroidLogo
+    {
+        display: none;
+    }
+
+    .link_bread
+    {
+        display: block;
+        width: 9%;
+        margin: auto;
+    }
+
+    .stuff
+    {
+        width: 40%;
+        margin: 0 10%;
+        padding: 10px;
+    }
+
+    .Android
+    {
+        display: none;
+    }
+}

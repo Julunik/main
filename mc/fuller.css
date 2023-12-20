@@ -1,0 +1,32 @@
+.fullerbread2032
+{
+    display: block;
+    margin: auto;
+    width: 100px;
+    animation: fullerAnim 2s linear infinite normal;
+}
+
+.link_bread
+{
+    display: block;
+    width: 100px;
+    margin: auto;
+}
+
+@keyframes fullerAnim
+{
+    0%
+    {
+        transform: translateY(0);
+    }
+
+    50%
+    {
+        transform: translateY(-5px);
+    }
+
+    100%
+    {
+        transform: translateY(0);
+    }
+}

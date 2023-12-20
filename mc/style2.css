@@ -1,0 +1,106 @@
+.stuff
+{
+    width: 80%;
+    margin: 0 10%;
+    padding: 10px;
+}
+
+.stuff p
+{
+    color: white;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.stuff h1
+{
+    color: aqua;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.video h1
+{
+    color: black;
+    text-align: center;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+.video
+{
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+}
+
+.video iframe
+{
+    width: 300px;
+    height: 200px;
+}
+
+.AndroidLogo
+{
+    width: 300px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.AndroidLogo .mc
+{
+    width: 100%;
+}
+
+.AndroidLogo .jpl
+{
+    width: 50%;
+    height: 0;
+    margin: 15px auto;
+    animation: jplAnim 2s linear infinite normal;
+}
+
+.jpl img
+{
+    width: 110%;
+    text-align: center;
+    transform: translate(-5px, -25px);
+}
+
+.Android
+{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Android a
+{
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    margin: auto;
+    cursor: default;
+}
+
+.Android .guzik
+{
+    display: block;
+    margin: 10px auto;
+}
+
+@keyframes jplAnim
+{
+    0%
+    {
+        box-shadow: 0 0 0px 0px rgba(0, 255, 255, 0);
+    }
+
+    50%
+    {
+        box-shadow: 0 0 10px 12px aqua;
+    }
+
+    100%
+    {
+        box-shadow: 0 0 0px 0px rgba(0, 255, 255, 0);
+    }
+}

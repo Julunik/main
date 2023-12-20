@@ -1,0 +1,127 @@
+@font-face
+{
+    font-family: 'Minecraftia';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Minecraftia'), url('mc/grafika_mc/minecraftia.ttf') format('truetype');
+}
+
+.mc
+{
+    background-color: white;
+    color: black;
+    background-image: url('mc/grafika_mc/background.jpg');
+    background-size: 750%;
+
+    animation: mcBackground 30s linear infinite normal;
+}
+
+@keyframes mcBackground 
+{
+    0%
+    {
+        background-position-x: 0%;
+    }
+
+    100%
+    {
+        background-position-x: 115%;
+    }
+}
+
+.mc_image
+{
+    margin: auto;
+    width: 175px;
+    display: block;
+    padding-top: 20px;
+}
+
+.logo_div
+{
+    box-shadow: 0 0 10px 10px aqua;
+    width: 100px;
+    height: 0;
+    margin: 15px auto;
+
+    animation: lightning 2s linear infinite normal;
+}
+
+.logo_img
+{
+    width: 125px;
+    transform: translate(-15px, -20px);
+}
+
+.server_image
+{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    filter: grayscale(100%);
+}
+
+.ver_image
+{
+    display: block;
+    width: 100px;
+    margin: auto;
+    transform: translateY(-100px);
+    filter: grayscale(100%);
+}
+
+.mc:hover .server_image
+{
+    filter: grayscale(0);
+}
+
+.mc:hover .ver_image
+{
+    filter: grayscale(0);
+}
+
+.mc_info
+{
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(rgba(225, 225, 225, 0), rgba(225, 225, 225, 1));
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    transform: translateY(38px);
+
+    transition: opacity .3s;
+}
+
+.mc:hover .mc_info
+{
+    opacity: 1;
+}
+
+.mc_info p
+{
+    text-decoration: none;
+    font-size: 16px;
+    color: aqua;
+    text-shadow: 3px 3px 10px black;
+    transform: translateY(10px);
+    font-family: 'Minecraftia', serif;
+}
+
+@keyframes lightning
+{
+    0%
+    {
+        box-shadow: 0 0 0px 0px rgba(0, 255, 255, 0);
+    }
+
+    50%
+    {
+        box-shadow: 0 0 10px 10px aqua;
+    }
+
+    100%
+    {
+        box-shadow: 0 0 0px 0px rgba(0, 255, 255, 0);
+    }
+}

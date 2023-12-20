@@ -1,0 +1,60 @@
+.Julunik
+{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px dotted;
+
+    animation: JulunikRamkaAnim 3s linear infinite normal, ramkaAnim 5s linear infinite normal;
+}
+
+.Julunik_img
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    animation: none;
+}
+
+@keyframes JulunikRamkaAnim
+{
+    /* 1 = 0%, 2 = 12%, 3 = 24%, 4 = 36%, 5 = 48%, 6 = 60%, 7 = 72%, 8 = 84%, 9 = 96% */
+    0%
+    {
+        color: rgb(4, 88, 4);
+    }
+
+    50%
+    {
+        color: lime;
+    }
+
+    75%
+    {
+        color: lime;
+    }
+
+    100%
+    {
+        color: rgb(4, 88, 4);
+    }
+}
+
+@keyframes GreenBorderShadow
+{
+    0%
+    {
+        box-shadow: 0 0 0 0 rgb(4, 88, 4);
+    }
+
+    50%
+    {
+        box-shadow: 0 0 10px 5px rgb(4, 88, 4);
+    }
+
+    100%
+    {
+        box-shadow: 0 0 0 0 rgb(4, 88, 4);
+    }  
+}
