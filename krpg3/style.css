@@ -52,6 +52,7 @@ a.button
     font-size: 110%;
     text-decoration: none;
     text-align: center;
+    user-select: none;
     border: 2px rgba(255, 255, 255, 0) solid;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 100px;
@@ -86,10 +87,6 @@ a.button:hover {
 {
     color: blue;
     font-size: 110%;
-    text-align: center;
-
-    width: 100px;
-    margin: auto;
     text-decoration: none;
 }
 
@@ -102,16 +99,28 @@ a.button:hover {
 {
     color: #027502;
     font-size: 110%;
-    text-align: center;
-
-    width: 100px;
-    margin: auto;
     text-decoration: none;
 }
 
 .tipplydonate:hover
 {
     text-decoration: underline;
+}
+
+.pobrania
+{
+    color: black;
+    font-size: 110%;
+    text-align: center;
+    display: inline-block;
+    user-select: none;
+}
+
+.downloads
+{
+    position: absolute;
+    user-select: none;
+    transform: translate(-5px, 1px);
 }
 
 @keyframes backgroundMove
