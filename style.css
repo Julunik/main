@@ -97,6 +97,7 @@ body
     text-align: center;
 
     transition: background-position, transform;
+animation: ramkaAnim 5s linear infinite normal;
 }
 
 a
