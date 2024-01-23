@@ -22,12 +22,14 @@
     /* 1 = 0%, 2 = 12%, 3 = 24%, 4 = 36%, 5 = 48%, 6 = 60%, 7 = 72%, 8 = 84%, 9 = 96% */
     0%
     {
+        transform: translateY(0);
         color: rgb(4, 88, 4);
     }
 
     50%
     {
         color: lime;
+        transform: translateY(-15px);
     }
 
     75%
@@ -37,6 +39,7 @@
 
     100%
     {
+        transform: translateY(0);
         color: rgb(4, 88, 4);
     }
 }
