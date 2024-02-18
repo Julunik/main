@@ -47,30 +47,28 @@ body
 
 a.button
 {
-    color: black;
+    color: rgba(255, 255, 255, 1);
     display: block;
     font-size: 110%;
     text-decoration: none;
     text-align: center;
     user-select: none;
     border: 2px rgba(255, 255, 255, 0) solid;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 100px;
 
     width: 200px;
     height: 50px;
-    
 
-    transition: box-shadow .3s;
-    transition: background-color .5s;
+    transition: box-shadow .3s, background-color .5s;
 
     margin: auto;
     padding: 10px;
 }
 
 a.button:hover {
-    box-shadow: 0 0 11px white;
-    background-color: white;
+    box-shadow: 0 0 11px black;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .stopka
