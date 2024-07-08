@@ -105,6 +105,18 @@ a.button:hover {
     text-decoration: underline;
 }
 
+.youtubejs
+{
+    color: #D04648;
+    font-size: 110%;
+    text-decoration: none;
+}
+
+.youtubejs:hover
+{
+    text-decoration: underline;
+}
+
 .pobrania
 {
     color: black;
