@@ -1,0 +1,32 @@
+body
+{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: lime;
+    text-align: center;
+}
+
+h3
+{
+    margin: 0;
+    text-align: center;
+}
+
+p
+{
+    margin: auto;
+    width: 33%;
+}
+
+p::before
+{
+    content: '👉 ';
+}
+
+li
+{
+    margin: auto;
+    width: 33%;
+    text-align: left;
+    color: limegreen;
+}
