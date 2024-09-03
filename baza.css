@@ -1,0 +1,86 @@
+@keyframes bazaBackground
+{
+    0%
+    {
+        background-position-x: 0%;
+    }
+
+    50%
+    {
+        background-position-x: 100%;
+    }
+
+    100%
+    {
+        background-position-x: 0%;
+    }
+}
+
+.baza
+{
+    background-color: white;
+    color: black;
+    background-image: url('baza/BazaBackground.jpg');
+    background-size: 500%;
+
+    animation: bazaBackground 30s linear infinite normal;
+}
+
+.RobloxLogoImage
+{
+    display: block;
+    width: 80px;
+    height: 75px;
+    margin: 85px auto 0 auto;
+    opacity: 0;
+
+    transition: opacity .3s;
+}
+
+.baza:hover .RobloxLogoImage
+{
+    opacity: 1;
+}
+
+.playBAZA
+{
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(rgba(225, 225, 225, 0), rgba(225, 225, 225, 1));
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+
+    transition: opacity .3s;
+}
+
+.baza > p
+{
+    font-weight: bold;
+}
+
+.baza .subtitle
+{
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    transform: translateY(-10px);
+}
+
+.playBAZA p
+{
+    font-size: 18px;
+}
+
+.baza:hover .playBAZA
+{
+    opacity: 1;
+}
+
+.baza_image
+{
+    display: block;
+    width: 125px;
+    height: 125px;
+    margin: 75px auto;
+}
