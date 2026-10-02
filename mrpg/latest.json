@@ -1,7 +1,7 @@
 {
   "LauncherVersion": 1,
-  "Version": "0.2.0",
-  "downloadUrl": "https://github.com/Julunik/MultiversalRPG/releases/download/v0.2.0/multiversal-rpg-v0.2.0.zip",
-  "androidLatest": "https://github.com/Julunik/MultiversalRPG/releases/download/v0.2.0/multiversal-rpg-v0.2.0.apk",
+  "Version": "0.3.0",
+  "downloadUrl": "https://github.com/Julunik/MultiversalRPG/releases/download/v0.3.0/multiversal-rpg-v0.3.0.zip",
+  "androidLatest": "https://github.com/Julunik/MultiversalRPG/releases/download/v0.3.0/multiversal-rpg-v0.3.0.apk",
   "launcherLatest": "https://github.com/Julunik/main/releases/download/mrpg/MRPGLauncher.exe"
 }
