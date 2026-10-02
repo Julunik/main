@@ -9,10 +9,13 @@ fetch("latest.json")
         return response.json();
     })
     .then(data => {
+        document.getElementById("mrpg_launcher_download").href = data.launcherLatest;
+    })
+    .then(data => {
         document.getElementById("mrpg_android_download").href = data.androidLatest;
     })
     .catch(error => {
         console.error(error);
     });
 
-console.log("Wersja strony: 10");
+console.log("Wersja strony: 11");
