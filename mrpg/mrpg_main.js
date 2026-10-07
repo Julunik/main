@@ -16,4 +16,5 @@ fetch("https://julunik.github.io/main/mrpg/latest.json")
         console.error(error);
     });
 
-console.log("Wersja strony: 12");
+console.log("Wersja strony: M");
+window.location.href = "https://julunik.github.io/mrpg";
