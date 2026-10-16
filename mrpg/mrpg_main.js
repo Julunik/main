@@ -3,7 +3,7 @@
 // GameLogo.src = "grafika_mrpg/"+icons[Math.floor(Math.random() * 3)];
 function Kliknieto(){ console.log("KLIKNIĘTO!"); }
 
-fetch("https://julunik.github.io/main/mrpg/latest.json")
+fetch("https://julunik.github.io/mrpg/latest.json")
     .then(response => {
         if (!response.ok) throw new Error("Unable to download JSON");
         return response.json();
@@ -16,5 +16,4 @@ fetch("https://julunik.github.io/main/mrpg/latest.json")
         console.error(error);
     });
 
-console.log("Wersja strony: M");
-window.location.href = "https://julunik.github.io/mrpg";
+console.log("Wersja strony: OG-1");
