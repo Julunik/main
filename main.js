@@ -1,4 +1,4 @@
-fetch("mrpg/latest.json")
+fetch("https://julunik.github.io/mrpg/latest.json")
     .then(response => {
         if (!response.ok) throw new Error("Unable to download JSON");
         return response.json();
